@@ -15,11 +15,11 @@ class HomeController extends Controller
         if($usertype == '1'){
             return view ('admin.home'); #Procure pela view home na pasta admin
         }else{
-            return view ('dashboard');
+            return view ('user.home');
         }
     }
 
     public function index(){
-        return view('User.home');
+        return view('user.home');
     }
 }
